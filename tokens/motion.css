@@ -1,0 +1,21 @@
+/* The app animates with Animated.timing (ease) and Animated.spring.
+   Nothing bounces on entry except the splash brand mark. */
+:root{
+  --dur-instant:150ms; /* @kind other */
+  --dur-fast:200ms; /* @kind other */   /* expo-image transition, chip state */
+  --dur-base:280ms; /* @kind other */   /* dot pulse, accordion */
+  --dur-exit:320ms; /* @kind other */   /* splash fade-out */
+  --dur-slow:380ms; /* @kind other */   /* logo rise, staged reveals */
+  --dur-slowest:420ms; /* @kind other *//* brand mark fade-in */
+
+  --ease-standard:cubic-bezier(.4,0,.2,1); /* @kind other */
+  --ease-out:cubic-bezier(0,0,.2,1); /* @kind other */
+  --ease-in:cubic-bezier(.4,0,1,1); /* @kind other */
+  /* Approximates Animated.spring(tension:55, friction:7) — splash mark only */
+  --ease-spring:cubic-bezier(.34,1.4,.64,1); /* @kind other */
+
+  /* Press feedback: the two values the app actually uses */
+  --press-opacity:.85; /* @kind other */
+  --press-opacity-strong:.7; /* @kind other */
+  --press-scale:.97; /* @kind other */
+}

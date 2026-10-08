@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="hu">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Padel Mánia Design System</title>
+<link rel="icon" href="assets/logos/fav-icon-rounded-square.svg">
+<link rel="stylesheet" href="styles.css">
+<style>
+  html, body { margin: 0; }
+  body { font-family: var(--font-sans); background: var(--surface-page, #fff); color: var(--text-primary, #0B3C49); }
+  header { background: var(--pm-teal, #0B3C49); color: #fff; padding: 40px 16px 36px; }
+  .wrap { max-width: 960px; margin: 0 auto; }
+  header img { height: 44px; display: block; margin-bottom: 20px; }
+  header p { margin: 0; max-width: 640px; color: var(--pm-sky, #9CC9D5); font-size: 15px; line-height: 1.5; }
+  main { padding: 8px 16px 64px; }
+  h2 { font-size: 20px; font-weight: 700; color: var(--pm-teal, #0B3C49); margin: 36px 0 4px; }
+  .lede { margin: 0 0 14px; font-size: 13px; color: var(--text-muted, #736E63); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 12px; }
+  .grid a { display: block; text-decoration: none; background: #fff; border: 1.5px solid #E5E0D5; border-radius: 14px; padding: 14px; color: inherit; transition: border-color .2s; }
+  .grid a:hover { border-color: var(--pm-coral, #FF6B4A); }
+  .grid strong { display: block; font-size: 15px; font-weight: 600; margin-bottom: 4px; }
+  .grid span { display: block; font-size: 13px; line-height: 1.4; color: var(--text-muted, #736E63); }
+  .hero a { background: var(--pm-cream, #F5F1E8); border-color: transparent; }
+  footer { padding: 24px 16px 40px; font-size: 12px; color: var(--text-muted, #736E63); border-top: 1px solid #E5E0D5; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <img src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+    <p>A Padel Mánia mobilapp és márka design systemje: színek, tipográfia, spacing tokenek, 28 React komponens, egy kattintható app UI kit és a hirdetési sablonok.</p>
+  </div>
+</header>
+<main class="wrap">
+  <h2>Kezdd itt</h2>
+  <p class="lede">A teljes leírás a README-ben van.</p>
+  <div class="grid hero">
+    <a href="ui_kits/mobile-app/index.html"><strong>Mobilapp UI kit</strong><span>Kattintható prototípus: webshop, termék, kosár, Ütőválasztó, Pályakereső, profil, Mánia+</span></a>
+    <a href="Padel%20Mania%20sablonkeszlet%20v1.html"><strong>Sablonkészlet</strong><span>Közösségi és hirdetési sablonok, sötét változat</span></a>
+    <a href="Padel%20Mania%20sablonkeszlet%20v1%20-%20bright.html"><strong>Sablonkészlet, bright</strong><span>Coral alapú, Instagram-poszt stílusú változat</span></a>
+  </div>
+
+  <h2>Komponensek</h2>
+  <p class="lede">Minden csoport egy bemutató oldal; a props szerződés a .d.ts, a használati jegyzet a .prompt.md fájlban van.</p>
+  <div class="grid">
+    <a href="components/core/core.card.html"><strong>Core</strong><span>Button, Badge, Chip, Input, ProgressBar, QtyStepper, Skeleton</span></a>
+    <a href="components/navigation/navigation.card.html"><strong>Navigáció</strong><span>AppHeader, ScreenHeader, SegmentControl, SectionHeader, TabBar, MenuSection</span></a>
+    <a href="components/commerce/commerce.card.html"><strong>Webshop</strong><span>ProductCard, CategoryCard, PriceBlock, ManiaPriceBox, CartLineItem</span></a>
+    <a href="components/promo/promo.card.html"><strong>Promó</strong><span>ManiaPlusBanner, FeatureCta, NoticeBanner, StatCard, BenefitRow</span></a>
+    <a href="components/finder/finder.card.html"><strong>Pályakereső</strong><span>CourtCard: alap, kedvenc, lenyitott</span></a>
+    <a href="components/quiz/quiz.card.html"><strong>Kvíz</strong><span>QuizOptionCard: szint, kép, ikon és költségkeret változatok</span></a>
+  </div>
+
+  <h2>Színek</h2>
+  <div class="grid">
+    <a href="guidelines/colors-teal.card.html"><strong>Teal</strong><span>A márka alapja: chrome, ár, sötét háttér</span></a>
+    <a href="guidelines/colors-coral.card.html"><strong>Coral</strong><span>Az egyetlen akciószín</span></a>
+    <a href="guidelines/colors-neutral-warm.card.html"><strong>Meleg semleges</strong><span>Cream felületek, meleg szürke szöveg</span></a>
+    <a href="guidelines/colors-mauve.card.html"><strong>Mauve</strong><span>Csak print és kampány, appban nem</span></a>
+    <a href="guidelines/colors-neutrals.card.html"><strong>Szürke skála</strong><span>Világos végén meleg tónus</span></a>
+    <a href="guidelines/colors-semantic.card.html"><strong>Szemantikus párok</strong><span>Minden állapothoz telt szín és tint</span></a>
+    <a href="guidelines/colors-status.card.html"><strong>Státusz</strong><span>Nyitvatartás, kedvencek, értékelés</span></a>
+    <a href="guidelines/colors-surfaces.card.html"><strong>Felületek</strong><span>Melyik komponens milyen háttéren ül</span></a>
+  </div>
+
+  <h2>Tipográfia</h2>
+  <div class="grid">
+    <a href="guidelines/type-display.card.html"><strong>Display és címsorok</strong><span>Inter Bold és SemiBold, 34 / 28 / 24 / 20 px</span></a>
+    <a href="guidelines/type-body.card.html"><strong>Szövegtörzs</strong><span>Inter Regular, 17 / 15 / 13 / 11 px</span></a>
+    <a href="guidelines/type-ui.card.html"><strong>Címkék és gombok</strong><span>A felületet hordozó mikrotipográfia</span></a>
+    <a href="guidelines/type-price.card.html"><strong>Ár</strong><span>Bold, ezres tagolás, Ft utótag</span></a>
+    <a href="guidelines/type-weights.card.html"><strong>Súlyok</strong><span>Négy statikus súly, dőlt nincs</span></a>
+    <a href="guidelines/type-hungarian.card.html"><strong>Magyar karakterkészlet</strong><span>Hosszú ékezetek, fontcsere csak teljes ő/ű készlettel</span></a>
+  </div>
+
+  <h2>Spacing és forma</h2>
+  <div class="grid">
+    <a href="guidelines/spacing-scale.card.html"><strong>Spacing skála</strong><span>4 px alaplépés, 16 px képernyőmargó</span></a>
+    <a href="guidelines/spacing-in-use.card.html"><strong>Margók használatban</strong><span>16 / 12 / 10 px</span></a>
+    <a href="guidelines/spacing-radius.card.html"><strong>Lekerekítések</strong><span>6 / 10 / 12 / 14 / 16 / 24 px és teljes</span></a>
+    <a href="guidelines/spacing-elevation.card.html"><strong>Árnyékok</strong><span>Semleges a chrome-hoz, teal tónusú a kártyákhoz</span></a>
+  </div>
+
+  <h2>Márka, képi világ, ikonok</h2>
+  <div class="grid">
+    <a href="guidelines/brand-logo.card.html"><strong>Logók</strong><span>Kétszínű, negatív és egyszínű változatok</span></a>
+    <a href="guidelines/brand-mark.card.html"><strong>Brand mark és app ikon</strong><span>Az önálló jel</span></a>
+    <a href="guidelines/brand-mania-plus.card.html"><strong>Mánia+</strong><span>A tagsági almárka logója</span></a>
+    <a href="guidelines/brand-corner-foldout.card.html"><strong>Behajtott sarok</strong><span>Az egyetlen grafikai elem</span></a>
+    <a href="guidelines/brand-imagery-studio.card.html"><strong>Stúdió termékfotók</strong><span>Átlátszó háttér, sosem vágva</span></a>
+    <a href="guidelines/brand-imagery-tactile.card.html"><strong>Kampány és taktilis képek</strong><span>Meleg nappali fény, közeli vágás</span></a>
+    <a href="guidelines/icons-phosphor.card.html"><strong>Phosphor ikonok</strong><span>Az egyetlen ikoncsalád</span></a>
+    <a href="guidelines/icons-padel-pack.card.html"><strong>Padel ikoncsomag</strong><span>Kiegészítő, átszínezendő</span></a>
+  </div>
+
+  <h2>Kampány: Minden padel labda 990 Ft</h2>
+  <p class="lede">A design systemre épülő hirdetési kreatívok verziói.</p>
+  <div class="grid">
+    <a href="Padel%20labda%20akcio%20-%20hirdetesek.html"><strong>Hirdetések</strong><span>Aktuális változat</span></a>
+    <a href="Padel%20labda%20akcio%20-%20hirdetesek%20v3%20(6%20meret).html"><strong>Hirdetések, 6 méret</strong><span>v3</span></a>
+    <a href="Padel%20labda%20akcio%20-%20hirdetesek%20v4%20(ABC%20osszehasonlitas).html"><strong>A/B/C összehasonlítás</strong><span>v4</span></a>
+    <a href="Padel%20labda%20akcio%20-%20szovegsorrend.html"><strong>Szövegsorrend</strong><span>Változatok egymás mellett</span></a>
+    <a href="Padel%20labda%20akcio%20-%20video.html"><strong>Videós hirdetések</strong><span>MP4 letöltéssel</span></a>
+  </div>
+</main>
+<footer>
+  <div class="wrap">A Padel Mánia név, logók és fotók a Padel Mania Kft. tulajdonát képezik. Lásd: README.</div>
+</footer>
+</body>
+</html>

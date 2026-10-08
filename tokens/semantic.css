@@ -1,0 +1,65 @@
+/* Role aliases. Reach for these first; drop to --pm-* only when a role
+   genuinely does not exist yet. */
+:root{
+  /* Text */
+  --text-primary:var(--pm-black);
+  --text-heading:var(--pm-gray-800);
+  --text-body:var(--pm-gray-700);
+  --text-label:var(--pm-gray-600);
+  --text-muted:var(--pm-gray-500);
+  --text-disabled:var(--pm-gray-400);
+  --text-brand:var(--pm-teal);
+  --text-action:var(--pm-coral);
+  --text-price:var(--pm-teal);
+  --text-price-sale:var(--pm-coral);
+  --text-on-brand:var(--pm-white);
+  --text-on-brand-soft:var(--pm-sky);
+  --text-on-brand-muted:rgba(255,255,255,.7);
+  --text-on-action:var(--pm-white);
+
+  /* Surfaces */
+  --surface-page:var(--pm-white);
+  --surface-page-alt:#F8F8F8;
+  --surface-card:var(--pm-white);
+  --surface-sunken:var(--pm-cream);
+  --surface-brand:var(--pm-teal);
+  --surface-brand-deep:var(--pm-teal-banner);
+  --surface-accent:var(--pm-sky-tint);
+  --surface-action:var(--pm-coral);
+  --surface-action-soft:var(--pm-coral-tint);
+  --surface-inverse:var(--pm-teal-deep);
+  --surface-scrim:rgba(0,0,0,.5);
+  /* Translucent fills used on top of the teal header */
+  --surface-on-brand-soft:rgba(255,255,255,.10);
+  --surface-on-brand-soft-2:rgba(255,255,255,.15);
+
+  /* Borders */
+  --border-subtle:var(--pm-border);
+  --border-strong:var(--pm-border-strong);
+  --border-brand:var(--pm-teal);
+  --border-on-brand:rgba(255,255,255,.3);
+  --border-accent:var(--pm-sky);
+
+  /* Actions */
+  --action-primary:var(--pm-coral);
+  --action-primary-text:var(--pm-white);
+  --action-secondary:var(--pm-teal);
+  --action-secondary-text:var(--pm-white);
+  --action-outline-border:var(--pm-teal);
+  --action-outline-text:var(--pm-teal);
+  --action-disabled:var(--pm-gray-400);
+
+  /* Feedback */
+  --feedback-error:var(--pm-error);        --feedback-error-bg:var(--pm-error-tint);
+  --feedback-warning:var(--pm-warning);    --feedback-warning-bg:var(--pm-warning-tint);
+  --feedback-success:var(--pm-success);    --feedback-success-bg:var(--pm-success-tint);
+  --feedback-info:var(--pm-info);          --feedback-info-bg:var(--pm-info-tint);
+
+  /* Mánia+ membership treatment */
+  --mania-surface:var(--pm-sky-tint);
+  --mania-border:#9CC5D5;
+  --mania-text:var(--pm-teal);
+  --mania-active-surface:var(--pm-success-tint);
+  --mania-active-border:var(--pm-success);
+  --mania-active-text:var(--pm-success);
+}

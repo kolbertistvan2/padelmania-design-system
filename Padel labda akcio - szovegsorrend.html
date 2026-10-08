@@ -1,0 +1,95 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><title>990 Ft — szövegsorrend változatok</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+html,body{margin:0}
+body{background:var(--surface-sunken);font-family:var(--font-sans);padding:40px;color:var(--text-primary)}
+h1{font:var(--fw-bold) 24px/1.2 var(--font-sans);letter-spacing:var(--tracking-title);color:var(--text-brand);margin:0 0 6px}
+.lead{font:var(--type-body);color:var(--text-label);margin:0 0 28px;max-width:820px}
+.row{display:flex;gap:36px;align-items:flex-start;overflow-x:auto;padding-bottom:10px}
+.wrap{display:flex;flex-direction:column;gap:10px;flex-shrink:0;width:1080px}
+.tag{font:var(--fw-bold) 13px/1.4 var(--font-sans);color:var(--text-brand)}
+.tag em{display:block;font:var(--fw-regular) 13px/1.5 var(--font-sans);color:var(--text-muted);font-style:normal}
+
+.ad{position:relative;overflow:hidden;background:var(--pm-teal);width:1080px;height:1080px}
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dim{position:absolute;inset:0;background:rgba(2,30,37,.28)}
+.fade{position:absolute;left:0;right:0;bottom:0;height:600px;background:linear-gradient(0deg,rgba(2,30,37,.97) 0%,rgba(2,30,37,.93) 44%,rgba(2,30,37,.6) 74%,rgba(2,30,37,0) 100%)}
+.logo{position:absolute;top:50px;left:60px;height:104px;width:auto;display:block;filter:drop-shadow(0 3px 16px rgba(2,30,37,.6))}
+.flash{position:absolute;top:50px;right:54px;display:flex;flex-direction:column;align-items:center;background:var(--pm-coral);color:#fff;border-radius:9999px;box-shadow:0 12px 44px rgba(2,30,37,.5);font-size:54px;padding:.34em .6em .42em}
+.flash span{display:block;font:var(--fw-bold) .3em/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;opacity:.92;margin-bottom:.1em}
+.flash b{display:block;font:var(--fw-bold) 1em/1 var(--font-sans);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+.block{position:absolute;left:60px;right:60px;bottom:214px;display:flex;flex-direction:column;align-items:flex-start}
+
+/* Egyetlen méret a mondatnak — ez a fő rendezőelv */
+.line{font:var(--fw-bold) 60px/1.06 var(--font-sans);letter-spacing:-.025em;color:#fff;margin:0;white-space:nowrap}
+.big{font:var(--fw-bold) 204px/.84 var(--font-sans);letter-spacing:-.05em;color:var(--pm-coral);margin:0;display:block;white-space:nowrap}
+.limit{font:var(--fw-bold) 21px/1 var(--font-sans);letter-spacing:.15em;text-transform:uppercase;color:var(--pm-sky);margin:0;white-space:nowrap}
+
+.slab{position:absolute;left:0;right:0;bottom:0;height:168px;background:var(--pm-coral);display:flex;align-items:center;justify-content:center;gap:.38em;white-space:nowrap;font-size:34px}
+.slab .t{font:var(--fw-bold) 1em/1.1 var(--font-sans);letter-spacing:-.01em;color:#fff}
+.ticket{display:inline-flex;align-items:center;background:var(--pm-teal-deep);color:#fff;font:var(--fw-bold) 1em/1 var(--font-sans);letter-spacing:.1em;text-transform:uppercase;border-radius:9999px;padding:.44em .84em .5em;box-shadow:inset 0 0 0 .1em rgba(255,255,255,.3)}
+a{color:var(--text-action)}a:hover{color:var(--pm-coral-deep)}
+</style></head><body>
+
+<h1>Szövegsorrend — három átrendezés</h1>
+<p class="lead">Két dolgot javítottam mindháromban: a mondat két fele <b>ugyanabban a méretben</b> van (eddig 76 és 48 px volt), és a limit <b>egy sorban, ugyanarra a bal élre igazítva</b> áll, nem a giant ár mellett lógva. Így minden sor egy tengelyre kerül.</p>
+
+<div class="row">
+
+  <!-- A · mondat előre, ár a lezárás -->
+  <div class="wrap">
+    <span class="tag">A · Mondat előre, ár a lezárás<em>Végigolvasható mondat, az ár a CTA-sáv fölött landol — a legrendezettebb.</em></span>
+    <div class="ad" id="var-a">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!-2.png" alt="">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line">Minden padel labda</p>
+        <p class="line" style="margin-bottom:6px">a Padel Mániánál!</p>
+        <span class="big">990 Ft</span>
+        <p class="limit" style="margin-top:14px">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+
+  <!-- B · ár előre -->
+  <div class="wrap">
+    <span class="tag">B · Ár előre, mondat utána<em>A 990 Ft üti meg először a szemet, a mondat magyarázza. Legagresszívebb.</em></span>
+    <div class="ad" id="var-b">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!-2.png" alt="">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <span class="big" style="font-size:228px">990 Ft</span>
+        <p class="line" style="margin-top:10px;font-size:56px">Minden padel labda</p>
+        <p class="line" style="font-size:56px">a Padel Mániánál!</p>
+        <p class="limit" style="margin-top:14px">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+
+  <!-- C · limit fent, egysoros mondat, legnagyobb ár -->
+  <div class="wrap">
+    <span class="tag">C · Limit fent, egysoros mondat<em>A mondat egy sorban fut, így az ár lehet a legnagyobb. Legtömörebb.</em></span>
+    <div class="ad" id="var-c">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!-2.png" alt="">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="limit" style="color:var(--pm-coral);margin-bottom:16px">Vásárlónként max 3 tubus</p>
+        <p class="line" style="font-size:47px;margin-bottom:2px">Minden padel labda a Padel Mániánál!</p>
+        <span class="big" style="font-size:252px">990 Ft</span>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="export-buttons.js"></script>
+</body></html>

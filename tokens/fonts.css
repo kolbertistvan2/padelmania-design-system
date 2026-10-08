@@ -1,0 +1,7 @@
+/* Padel Mánia ships Inter as four static weights — the same four files the
+   mobile app loads (assets/fonts/Inter-*.ttf in padelmania-mobilapp).
+   No variable font, no italics in product UI. */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("../assets/fonts/Inter-Regular.ttf") format("truetype")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("../assets/fonts/Inter-Medium.ttf") format("truetype")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("../assets/fonts/Inter-SemiBold.ttf") format("truetype")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("../assets/fonts/Inter-Bold.ttf") format("truetype")}

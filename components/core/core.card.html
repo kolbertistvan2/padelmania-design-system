@@ -1,0 +1,55 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Core" subtitle="Button, Badge, Chip, Input, ProgressBar, QtyStepper, Skeleton" -->
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"><style>html,body{margin:0}body{font-family:var(--font-sans);background:var(--surface-page);color:var(--text-primary)}#root{padding:16px}.row{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:14px}.cap{font:var(--fw-semibold) 9px/1 var(--font-sans);letter-spacing:var(--tracking-caps-wide);text-transform:uppercase;color:var(--text-muted);margin-bottom:7px}a{color:var(--text-action)}a:hover{color:var(--pm-coral-deep)}</style></head><body><div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+const { Button, Badge, Chip, Input, ProgressBar, QtyStepper, Skeleton, Icon } = window.PadelMNiaDesignSystem_b97c58;
+function Card(){
+  const [sort,setSort]=React.useState('Ajánlott');
+  const [qty,setQty]=React.useState(2);
+  return (<div>
+    <div className="cap">Button</div>
+    <div className="row">
+      <Button variant="primary" iconRight={<Icon name="arrow-right" size={16} weight="bold"/>}>Indítsd el</Button>
+      <Button variant="secondary">Vásárlás</Button>
+      <Button variant="outline">Regisztráció</Button>
+      <Button variant="ghost">Részletek</Button>
+      <Button variant="primary" size="sm" pill>Csatlakozz</Button>
+      <Button variant="primary" size="sm" disabled>Elfogyott</Button>
+      <Button variant="danger" size="sm" iconLeft={<Icon name="sign-out" size={14} weight="bold"/>}>Kijelentkezés</Button>
+    </div>
+    <div className="cap">Badge</div>
+    <div className="row">
+      <Badge tone="brand" caps>Akció</Badge>
+      <Badge tone="success">Kipróbálható</Badge>
+      <Badge tone="accent">1.0-2.0</Badge>
+      <Badge tone="outline">Készleten</Badge>
+      <Badge tone="open">Nyitva</Badge>
+      <Badge tone="closed">Zárva</Badge>
+      <Badge tone="action" caps size="sm">App</Badge>
+    </div>
+    <div className="cap">Chip</div>
+    <div className="row">
+      {['Ajánlott','Távolság','Értékelés','Vélemények'].map(l=>(
+        <Chip key={l} selected={sort===l} onClick={()=>setSort(l)} iconLeft={<Icon name={l==='Távolság'?'map-trifold':l==='Vélemények'?'chat-dots':'star'} size={13} weight="bold"/>}>{l}</Chip>
+      ))}
+      <Chip kind="chip">Kerek forma</Chip>
+      <Chip kind="chip">Puha mag</Chip>
+    </div>
+    <div className="row" style={{alignItems:'flex-end',gap:16}}>
+      <div style={{flex:'1 1 200px'}}><div className="cap">Input</div><Input label="E-mail" placeholder="nev@pelda.hu"/></div>
+      <div style={{flex:'1 1 180px'}}><div className="cap">Input · error</div><Input label="Jelszó" type="password" error="Hibás jelszó" iconRight={<Icon name="eye" size={18} color="var(--text-muted)"/>}/></div>
+      <div><div className="cap">QtyStepper</div><QtyStepper value={qty} onChange={setQty}/></div>
+    </div>
+    <div className="cap">ProgressBar · 3 / 5</div>
+    <ProgressBar value={3} total={5} style={{marginBottom:16,borderRadius:2}}/>
+    <div className="cap">Skeleton</div>
+    <div style={{background:'var(--surface-sunken)',borderRadius:'var(--radius-lg)',padding:14,display:'flex',flexDirection:'column',gap:8}}>
+      <Skeleton width="55%" height={18}/><Skeleton width="80%" height={14}/><Skeleton width="35%" height={14}/>
+    </div>
+  </div>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Card/>);
+</script></body></html>

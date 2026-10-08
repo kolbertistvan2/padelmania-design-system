@@ -1,0 +1,60 @@
+/* ── Padel Mánia base palette ──────────────────────────────────────────
+   Verbatim from Padel_Mania_Colours.pdf / Padel_maniaColours.png:
+   four families × three steps (tint / base / shade). The mobile app's
+   src/constants/colors.ts is the same set under app-side names. */
+:root{
+  /* Warm neutral family */
+  --pm-cream:#F5F1E8;
+  --pm-sand:#E5DCC5;
+  --pm-warm-gray:#736E63;
+
+  /* Coral family — the action colour */
+  --pm-blush:#FFC4B7;
+  --pm-coral:#FF6B4A;
+  --pm-coral-deep:#591E11;
+
+  /* Mauve family — editorial / secondary surfaces */
+  --pm-mauve:#D8C2C9;
+  --pm-burgundy:#523D44;
+  --pm-burgundy-deep:#281A1E;
+
+  /* Teal family — the brand colour */
+  --pm-sky:#9CC9D5;
+  --pm-teal:#0B3C49;
+  --pm-teal-deep:#021E25;
+
+  /* Derived brand tints used in product UI (app-side, not on the brand sheet) */
+  --pm-sky-tint:#E8F4F7;      /* Colors.accentLight — Mánia+ price box, quiz hero */
+  --pm-sky-tab:#A8D4DE;       /* inactive tab glyph on teal */
+  --pm-coral-light:#FF8B69;   /* quiz level step 4 */
+  --pm-coral-tint:#FFF4F1;    /* benefit icon disc */
+  --pm-coral-tint-2:#FFE3DA;  /* highlighted menu icon disc */
+  --pm-teal-banner:#0A2F3A;   /* Mánia+ home banner ground */
+
+  /* Neutral scale — warm at the light end, warm-black at the dark end */
+  --pm-black:#0A0A0A;
+  --pm-white:#FFFFFF;
+  --pm-gray-100:#F5F1E8;
+  --pm-gray-200:#EDE8DE;
+  --pm-gray-300:#D9D3C7;
+  --pm-gray-400:#BDBDBD;
+  --pm-gray-500:#9E9E9E;
+  --pm-gray-600:#736E63;
+  --pm-gray-700:#4A4540;
+  --pm-gray-800:#221F1B;
+  --pm-border:#E0D9CE;
+  --pm-border-strong:#E5E0D5;
+
+  /* Semantic */
+  --pm-error:#D32F2F;      --pm-error-tint:#FFEBEE;
+  --pm-warning:#F57C00;    --pm-warning-tint:#FFF3E0;
+  --pm-success:#388E3C;    --pm-success-tint:#E8F5E9;
+  --pm-info:#0288D1;       --pm-info-tint:#E1F5FE;
+
+  /* Status / data colours (Court Finder, reviews, favourites, WhatsApp source) */
+  --pm-open:#34C759;
+  --pm-closed:#FF3B30;
+  --pm-favorite:#FF3B5C;
+  --pm-star:#F5A623;
+  --pm-whatsapp:#25D366;
+}

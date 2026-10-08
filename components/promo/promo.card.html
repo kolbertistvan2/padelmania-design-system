@@ -1,0 +1,41 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Promo" subtitle="ManiaPlusBanner, FeatureCta, NoticeBanner, StatCard, BenefitRow" -->
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><link rel="stylesheet" href="../../styles.css"><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css"><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css"><link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css"><style>html,body{margin:0}body{font-family:var(--font-sans);background:var(--surface-page);color:var(--text-primary)}#root{padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:start}.cap{font:var(--fw-semibold) 9px/1 var(--font-sans);letter-spacing:var(--tracking-caps-wide);text-transform:uppercase;color:var(--text-muted);margin-bottom:7px}a{color:var(--text-action)}a:hover{color:var(--pm-coral-deep)}</style></head><body><div id="root"></div>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<script type="text/babel">
+const { ManiaPlusBanner, FeatureCta, NoticeBanner, StatCard, BenefitRow, Icon } = window.PadelMNiaDesignSystem_b97c58;
+function Card(){
+  return (<>
+    <div>
+      <div className="cap">ManiaPlusBanner</div>
+      <ManiaPlusBanner title="Mánia Plusz" subtitle="15% kedvezmény minden termékre" markSrc="../../assets/logos/app-icon-mania.png" onClick={()=>{}}/>
+      <div className="cap" style={{marginTop:16}}>FeatureCta</div>
+      <FeatureCta icon={<Icon name="crosshair" size={24}/>} title="Nem tudod, melyik ütő a tiéd?" subtitle="5 kérdés, és megvan az ütőd" onClick={()=>{}}/>
+      <div className="cap" style={{marginTop:16}}>StatCard</div>
+      <div style={{display:'flex',gap:10}}>
+        <StatCard value="5" label="kérdés"/><StatCard value="2 perc" label="válaszra"/><StatCard value="3" label="ajánlás"/>
+      </div>
+    </div>
+    <div>
+      <div className="cap">NoticeBanner</div>
+      <NoticeBanner icon={<Icon name="bell-ringing" size={22}/>} onAccept={()=>{}} onDeny={()=>{}} onClose={()=>{}} acceptLabel="Kérem" denyLabel="Most nem">
+        Szólunk, ha megjön a rendelésed vagy akcióba kerül a kiszemelt ütőd.
+      </NoticeBanner>
+      <div className="cap" style={{marginTop:16}}>BenefitRow · coral</div>
+      <div style={{display:'flex',flexDirection:'column',gap:10}}>
+        <BenefitRow icon={<Icon name="crosshair" size={16}/>} title="Személyre szabott találatok" subtitle="A te szintedhez, stílusodhoz, kerethez"/>
+        <BenefitRow icon={<Icon name="sliders-horizontal" size={16}/>} title="Részletes elemzés" subtitle="Súly, mag, egyensúly, sweet spot és még 4 szempont"/>
+        <BenefitRow icon={<Icon name="package" size={16}/>} title="Valós készlet" subtitle="Csak amit tényleg meg tudsz rendelni"/>
+      </div>
+      <div className="cap" style={{marginTop:16}}>BenefitRow · cream</div>
+      <div style={{background:'var(--surface-card)',borderRadius:'var(--radius-xl)',padding:16,boxShadow:'var(--shadow-sm)'}}>
+        <BenefitRow tone="cream" icon={<Icon name="check-circle" size={22} weight="fill"/>} title="Minimum 15% kedvezmény minden termékre" divider/>
+        <BenefitRow tone="cream" icon={<Icon name="truck" size={22} weight="fill"/>} title="Ingyenes szállítás minden rendeléshez"/>
+      </div>
+    </div>
+  </>);
+}
+ReactDOM.createRoot(document.getElementById('root')).render(<Card/>);
+</script></body></html>

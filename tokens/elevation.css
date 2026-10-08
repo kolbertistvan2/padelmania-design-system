@@ -1,0 +1,19 @@
+/* Two shadow families.
+   Neutral (Shadow.sm/md/lg in the app) for chrome: menus, sheets, bars.
+   Teal-tinted for content cards on white — the brand's card signature. */
+:root{
+  --shadow-sm:0 1px 4px rgba(0,0,0,.08);
+  --shadow-md:0 2px 8px rgba(0,0,0,.12);
+  --shadow-lg:0 4px 16px rgba(0,0,0,.16);
+
+  --shadow-card:0 2px 6px rgba(11,60,73,.06);      /* category card */
+  --shadow-card-raised:0 2px 8px rgba(11,60,73,.08);/* product card */
+  --shadow-brand:0 2px 8px rgba(11,60,73,.10);      /* Colors.shadow */
+
+  --border-hairline:1px; /* @kind spacing */
+  --border-emphasis:1.5px; /* @kind spacing */  /* inputs, quiz cards, outline buttons */
+
+  /* iOS tab bar material — blur over screen content */
+  --blur-chrome:blur(20px) saturate(180%); /* @kind other */
+  --scrim-chrome:rgba(255,255,255,.96);
+}

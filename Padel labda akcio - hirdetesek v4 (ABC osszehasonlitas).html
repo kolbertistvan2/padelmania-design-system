@@ -1,0 +1,200 @@
+<!doctype html><html lang="hu"><head><meta charset="utf-8"><title>Minden padel labda 990 Ft — hirdetési kreatívok</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+html,body{margin:0}
+body{background:var(--surface-sunken);font-family:var(--font-sans);padding:40px}
+h1{font:var(--fw-bold) 24px/1.2 var(--font-sans);letter-spacing:var(--tracking-title);color:var(--text-brand);margin:0 0 6px}
+.lead{font:var(--type-body);color:var(--text-label);margin:0 0 30px;max-width:860px}
+.rowhead{font:var(--fw-bold) 14px/1.4 var(--font-sans);letter-spacing:.1em;text-transform:uppercase;color:var(--text-brand);margin:0 0 3px}
+.rowsub{font:var(--type-body-sm);color:var(--text-muted);margin:0 0 14px;max-width:700px}
+.row{display:flex;gap:40px;align-items:flex-start;overflow-x:auto;padding-bottom:10px;margin-bottom:44px}
+.wrap{display:flex;flex-direction:column;gap:10px;flex-shrink:0}
+.tag{font:var(--fw-semibold) 12px/1 var(--font-sans);letter-spacing:var(--tracking-caps-wide);text-transform:uppercase;color:var(--text-muted)}
+
+/* ── Artboard shell + per-size geometry ──────────────────────── */
+.ad{position:relative;overflow:hidden;background:var(--pm-teal);--pad:60px;--fade-h:600px;--tb-bottom:214px;--slab-h:168px;--slab-fs:34px;--logo-h:104px;--flash-fs:54px}
+.ad.s11{width:1080px;height:1080px}
+.ad.s45{width:1080px;height:1350px;--fade-h:740px;--tb-bottom:236px;--slab-h:184px;--slab-fs:36px;--logo-h:110px;--flash-fs:57px}
+.ad.s916{width:1080px;height:1920px;--pad:64px;--fade-h:300px;--slab-h:220px;--slab-fs:42px;--logo-h:130px;--flash-fs:66px}
+
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dim{position:absolute;inset:0;background:rgba(2,30,37,.28)}
+.fade{position:absolute;left:0;right:0;bottom:0;height:var(--fade-h);background:linear-gradient(0deg,rgba(2,30,37,.97) 0%,rgba(2,30,37,.93) 44%,rgba(2,30,37,.6) 74%,rgba(2,30,37,0) 100%)}
+.logo{position:absolute;top:calc(var(--pad) - 10px);left:var(--pad);height:var(--logo-h);width:auto;display:block;filter:drop-shadow(0 3px 16px rgba(2,30,37,.6))}
+.flash{position:absolute;top:calc(var(--pad) - 10px);right:calc(var(--pad) - 6px);display:flex;flex-direction:column;align-items:center;background:var(--pm-coral);color:#fff;border-radius:9999px;box-shadow:0 12px 44px rgba(2,30,37,.5);font-size:var(--flash-fs);padding:.34em .6em .42em}
+.flash span{display:block;font:var(--fw-bold) .3em/1 var(--font-sans);letter-spacing:.18em;text-transform:uppercase;opacity:.92;margin-bottom:.1em}
+.flash b{display:block;font:var(--fw-bold) 1em/1 var(--font-sans);letter-spacing:.05em;text-transform:uppercase;white-space:nowrap}
+
+.block{position:absolute;left:var(--pad);right:var(--pad);bottom:var(--tb-bottom);display:flex;flex-direction:column;align-items:flex-start}
+.s916 .block{bottom:auto;top:1112px}
+
+/* One size for the whole sentence, one axis for every row */
+.line{font:var(--fw-bold) var(--line-fs)/1.06 var(--font-sans);letter-spacing:-.025em;color:#fff;margin:0;white-space:nowrap}
+.big{font:var(--fw-bold) var(--big-fs)/.84 var(--font-sans);letter-spacing:-.05em;color:var(--pm-coral);margin:0;display:block;white-space:nowrap}
+.limit{font:var(--fw-bold) var(--limit-fs)/1 var(--font-sans);letter-spacing:.15em;text-transform:uppercase;color:var(--pm-sky);margin:0;white-space:nowrap}
+
+/* Arrangements — ordering only */
+.arrA .line{order:1;margin-bottom:6px}.arrA .big{order:2}.arrA .limit{order:3;margin-top:14px}
+.arrB .big{order:1}.arrB .line{order:2;margin-top:10px}.arrB .limit{order:3;margin-top:14px}
+.arrC .limit{order:1;margin-bottom:16px;color:var(--pm-coral)}.arrC .line{order:2;margin-bottom:2px}.arrC .big{order:3}
+.arrC .brk{display:none}
+.arrC .l2::before{content:" "}
+
+.slab{position:absolute;left:0;right:0;bottom:0;height:var(--slab-h);background:var(--pm-coral);display:flex;align-items:center;justify-content:center;gap:.38em;white-space:nowrap;font-size:var(--slab-fs)}
+.slab .t{font:var(--fw-bold) 1em/1.1 var(--font-sans);letter-spacing:-.01em;color:#fff}
+.ticket{display:inline-flex;align-items:center;background:var(--pm-teal-deep);color:#fff;font:var(--fw-bold) 1em/1 var(--font-sans);letter-spacing:.1em;text-transform:uppercase;border-radius:9999px;padding:.44em .84em .5em;box-shadow:inset 0 0 0 .1em rgba(255,255,255,.3)}
+a{color:var(--text-action)}a:hover{color:var(--pm-coral-deep)}
+</style></head><body>
+
+<h1>Minden padel labda 990 Ft — három szövegsorrend, mindhárom méretben</h1>
+<p class="lead">Minden változatban a mondat két fele ugyanabban a méretben van, és a limit egy sorban, a többivel egy bal élre igazítva áll. A „Amíg a készlet tart" felirat a győztes változatra kerül rá — a C-nél ez a limit helyére megy, ott a kettő ütközik.</p>
+
+<p class="rowhead">A · Mondat előre, ár a lezárás</p>
+<p class="rowsub">Végigolvasható mondat, az ár közvetlenül a CTA-sáv fölött landol. A legrendezettebb olvasás.</p>
+<div class="row">
+  <div class="wrap"><span class="tag">1:1 · 1080×1080</span>
+    <div class="ad s11 arrA" id="a-1x1" style="--line-fs:60px;--big-fs:204px;--limit-fs:21px">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!-2.png" alt="">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+  <div class="wrap"><span class="tag">4:5 · 1080×1350</span>
+    <div class="ad s45 arrA" id="a-4x5" style="--line-fs:62px;--big-fs:214px;--limit-fs:22px">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!.png" alt="" style="object-position:center 34%">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+  <div class="wrap"><span class="tag">9:16 · 1080×1920</span>
+    <div class="ad s916 arrA" id="a-9x16" style="--line-fs:74px;--big-fs:288px;--limit-fs:26px">
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1080px;overflow:hidden">
+        <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!.png" alt="">
+        <div class="dim"></div><div class="fade"></div>
+      </div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+</div>
+
+<p class="rowhead">B · Ár előre, mondat utána</p>
+<p class="rowsub">A 990 Ft üti meg először a szemet, a mondat magyarázza. A legagresszívebb.</p>
+<div class="row">
+  <div class="wrap"><span class="tag">1:1 · 1080×1080</span>
+    <div class="ad s11 arrB" id="b-1x1" style="--line-fs:56px;--big-fs:228px;--limit-fs:21px">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!-2.png" alt="">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+  <div class="wrap"><span class="tag">4:5 · 1080×1350</span>
+    <div class="ad s45 arrB" id="b-4x5" style="--line-fs:58px;--big-fs:238px;--limit-fs:22px">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!.png" alt="" style="object-position:center 34%">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+  <div class="wrap"><span class="tag">9:16 · 1080×1920</span>
+    <div class="ad s916 arrB" id="b-9x16" style="--line-fs:68px;--big-fs:320px;--limit-fs:26px">
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1080px;overflow:hidden">
+        <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!.png" alt="">
+        <div class="dim"></div><div class="fade"></div>
+      </div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+</div>
+
+<p class="rowhead">C · Limit fent, egysoros mondat</p>
+<p class="rowsub">A mondat egy sorban fut, így az ár lehet a legnagyobb. A legtömörebb — de itt a limit foglalja a felső sort, ide nem tesszük be a határidőt is.</p>
+<div class="row">
+  <div class="wrap"><span class="tag">1:1 · 1080×1080</span>
+    <div class="ad s11 arrC" id="c-1x1" style="--line-fs:47px;--big-fs:252px;--limit-fs:21px">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!-2.png" alt="">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+  <div class="wrap"><span class="tag">4:5 · 1080×1350</span>
+    <div class="ad s45 arrC" id="c-4x5" style="--line-fs:48px;--big-fs:262px;--limit-fs:22px">
+      <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!.png" alt="" style="object-position:center 34%">
+      <div class="dim"></div><div class="fade"></div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+  <div class="wrap"><span class="tag">9:16 · 1080×1920</span>
+    <div class="ad s916 arrC" id="c-9x16" style="--line-fs:49px;--big-fs:340px;--limit-fs:26px">
+      <div style="position:absolute;top:0;left:0;width:1080px;height:1080px;overflow:hidden">
+        <img class="photo" src="uploads/Copy%20of%20Minden%20padel%20labda%20990%20forint!.png" alt="">
+        <div class="dim"></div><div class="fade"></div>
+      </div>
+      <img class="logo" src="assets/logos/padel-mania-logo-white.svg" alt="Padel Mánia">
+      <div class="flash"><span>kuponkód</span><b>labda</b></div>
+      <div class="block">
+        <p class="line"><span>Minden padel labda</span><br class="brk"><span class="l2">a Padel Mániánál!</span></p>
+        <span class="big">990 Ft</span>
+        <p class="limit">Vásárlónként max 3 tubus</p>
+      </div>
+      <div class="slab"><span class="t">Ne maradj le! Használd a</span><span class="ticket">labda</span><span class="t">kuponkódot</span></div>
+    </div>
+  </div>
+</div>
+
+<script src="export-buttons.js"></script>
+</body></html>
